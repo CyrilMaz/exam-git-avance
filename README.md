@@ -13,28 +13,23 @@ Ce repository contient plusieurs branches avec du code pré-écrit.
 
 
 # Arborescence actuelle #
-o│ = fait
 
- │ = à faire
-
-
-o├── go.mod
- ├── go.sum
-o├── main.go
- │
-o├── data
- │   └── books.go      // Données simulées : liste des livres         
- │
-o├── handlers
-o│   └── books.go      // Handlers : liste + détail         
- │
- ├── templates
- │   ├── layout.html   // Layout global (header/footer)         
- │   ├── index.html    // Page d'accueil         
- │   ├── books.html    // Page listant tous les livres         
- │   └── book.html     // Page d’un livre (route dynamique)         
- │
-o├── static
-o│   └── style.css
-o│
-o└── README.md
+├── go.mod
+├── go.sum
+├── main.go
+│
+├── data
+│   └── books.go      // liste des livres
+│
+├── handlers
+│   └── books.go      // Handlers : liste + détail         
+│
+├── templates        
+│   ├── book.html     // Page d’un livre (route dynamique)         
+│   ├── contact.html  // Page des contacts         
+│   └── home.html     // Page d'accueil        
+│
+├── static
+│   └── style.css
+│
+└── README.md
