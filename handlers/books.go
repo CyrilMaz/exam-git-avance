@@ -13,7 +13,8 @@ var books = []data.Book{
 }
 
 func HomeHandler(w http.ResponseWriter, r *http.Request) {
-    return
+    tmpl := template.Must(template.ParseFiles("templates/home.html"))
+    tmpl.Execute(w, books)
 }
 
 func BookHandler(w http.ResponseWriter, r *http.Request) {
